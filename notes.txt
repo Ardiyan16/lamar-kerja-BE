@@ -1,0 +1,23 @@
+-type user 
+1 admin
+2 employee
+3 company
+
+-status user
+0 not verifed
+1 active
+2 banned
+
+-status job post 
+0 draft 
+1 show 
+2 expired 
+3 banned 
+4 close  
+
+-status apply job 
+0 terkirim 
+1 dalam review 
+2 terpilih 
+4 test 
+5 belum sesuai 
