@@ -8,7 +8,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class isApiCompany
+class IsApiAdmin
 {
 
     public function handle(Request $request, Closure $next): Response
@@ -51,7 +51,7 @@ class isApiCompany
             ]);
         }
 
-        if($type != '3') {
+        if($type != '1') {
             return response([
                 'status' => false,
                 'message' => 'Tipe akun anda pelamar kerja, anda tidak memiliki akses!'

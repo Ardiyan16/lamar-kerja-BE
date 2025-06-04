@@ -8,9 +8,8 @@ use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class isApiCompany
+class IsAllAPi
 {
-
     public function handle(Request $request, Closure $next): Response
     {
         $token = $request->header('a');
@@ -48,13 +47,6 @@ class isApiCompany
             return response([
                 'status' => false,
                 'message' => 'Akun anda tidak ditemukan, silahkan login kembali'
-            ]);
-        }
-
-        if($type != '3') {
-            return response([
-                'status' => false,
-                'message' => 'Tipe akun anda pelamar kerja, anda tidak memiliki akses!'
             ]);
         }
 

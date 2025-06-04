@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class type_industry extends Model
+class regency extends Model
 {
-    protected $table = 'type_industry';
     protected $fillable = [
-        'name_industry',
+        'id',
+        'province_id',
+        'name'
     ];
 }

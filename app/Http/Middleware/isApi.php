@@ -51,10 +51,10 @@ class isApi
             ]);
         }
 
-        if($user->type != $type) {
+        if($type != '2') {
             return response([
                 'status' => false,
-                'message' => 'Tipe akun anda perusahaan tidak dapat akses!'
+                'message' => 'Tipe akun anda perusahaan, anda tidak memiliki akses!'
             ]);
         }
 

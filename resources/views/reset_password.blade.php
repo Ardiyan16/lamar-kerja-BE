@@ -22,7 +22,7 @@
                     <tr>
                         <td style="width: 38%"></td>
                         <td align="center">
-                            <img src="https://img.freepik.com/free-vector/welcome-word-flat-cartoon-people-characters_81522-4207.jpg" alt="" width="100%">
+                            <img src="https://img.freepik.com/free-photo/computer-security-with-login-password-padlock_107791-16191.jpg" alt="" width="100%">
                         </td>
                         <td style="width: 38%"></td>
                     </tr>
@@ -31,27 +31,16 @@
                     <tr>
                         <td style="width: 25%"></td>
                         <td align="center">
-                            {{-- <img src="{{ asset('assets/images/icons/welcome.png') }}" alt="" width="100%" style="filter: backdrop(10px)"> --}}
+                            <img src="{{ asset('assets/images/icons/welcome.png') }}" alt="" width="100%" style="filter: backdrop(10px)">
                         </td>
                         <td style="width: 25%"></td>
                     </tr>
                 </table>
                 <table width="100%">
                     <tr>
-                        <td style="width: 15%"></td>
-                        <td align="center">
-                            <h3 style="font-size: 23px;font-weight: 600">
-                                Selamat Datang di LamarKerja.com
-                            </h3>
-                        </td>
-                        <td style="width: 15%"></td>
-                    </tr>
-                </table>
-                <table width="100%">
-                    <tr>
                         <td style="width: 5%"></td>
                         <td>
-                            <p style="font-size: 20px">Halo, {{ $send_data['username'] }}</p>
+                            <p style="font-size: 20px">Hai, {{ $send_data['username'] }}</p>
                         </td>
                         <td style="width: 5%"></td>
                     </tr>
@@ -61,11 +50,7 @@
                         <td style="width: 5%"></td>
                         <td>
                             <p style="font-size: 13px; margin: 0; color: #7F7F7F">
-                                @if ($send_data['type'] == 'employee')
-                                    Terima kasih telah mendaftar di LamarKerja.com! Selamat bergabung di LamarKerja.com, platform terpercaya untuk menemukan peluang karier terbaik Anda. Temukan lowongan kerja impianmu sekarang!. Silahkan klik tombol dibawah ini untuk link verifikasi akun anda
-                                @else
-                                    Terima kasih telah mendaftar di LamarKerja.com! Selamat bergabung di LamarKerja.com, platform terpercaya untuk perusahaan anda dalam menemukan talenta-talenta terbaik dan profesional di bidangnya!. Silahkan klik tombol dibawah ini untuk link verifikasi akun anda
-                                @endif
+                                Kami menerima konfirmasi perubahan kata sandi pada akun anda, dengan itu kami mengirimkan verifikasi ke email anda untuk untuk mengubah kata sandi anda, silahkan klik button dibawah ini untuk mengubah kata sandi anda
                             </p>
                         </td>
                         <td style="width: 5%"></td>
@@ -76,7 +61,7 @@
                         <td style="width: 35%;"></td>
                         <td align="center">
                             <a href="{{ url($send_data['link']) }}" style="display: block;width: 100%;border-radius: 10px;background: #33B0E4;padding: 10px 15px;text-decoration: none;color: #fff;font-size: 13px;">
-                                Link Verifikasi Akun
+                                Ubah Kata Sandi
                             </a>
                         </td>
                         <td style="width: 35%;"></td>
@@ -88,12 +73,9 @@
                         <td style="width: 5%"></td>
                         <td>
                             <p style="font-size: 13px; margin: 0; color: #7F7F7F">
-                                @if ($send_data['type'] == 'employee')
-                                    Selamat bergabung di LamarKerja.com untuk memudahkan anda dalam mendapatkan informasi lowongan dan lamaran kerja terbaru dan professional
-                                @else
-                                    Selamat bergabung di LamarKerja.com yang dapat membantu anda menemukan talenta terbaik untuk perusahaan anda
-                                @endif
+                                Jika tombol diatas tidak berfungsi, silahkan copy link dibawah ini dan paste pada browser anda
                             </p>
+                            <p style="font-size: 13px; margin: 0; color: #7F7F7F"><a href="{{ url($send_data['link']) }}">{{ url($send_data['link']) }}</a></p>
                             <p style="font-size: 13px; margin: 0; color: #7F7F7F; margin-top: 20px">
                                 Salam, Tim LamarKerja.com
                             </p>
